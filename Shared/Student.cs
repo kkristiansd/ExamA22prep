@@ -5,7 +5,7 @@ namespace Data;
 public class Student
 {
     [Key]
-    public int studentId { get;}
+    public int studentId { get; set; }
     [Required(ErrorMessage = "Name is required!")]
     [StringLength(25,ErrorMessage = "Wrong name buddy.")]
     public string Name { get; set; }   
@@ -14,6 +14,7 @@ public class Student
     
     
     public List<GradeInCourse> GradeInCourses { get; set; }
-    
+
+   
     
 }

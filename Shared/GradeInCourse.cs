@@ -12,8 +12,7 @@ public class GradeInCourse
     [Required(ErrorMessage = "Grade is required")]
     public int Grade { get; set; }
     
-    public int studentId { get; }
 
-    public Student Student { get; set; }
+   
     
 }
