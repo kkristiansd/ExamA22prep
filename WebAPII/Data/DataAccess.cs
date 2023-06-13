@@ -19,10 +19,10 @@ public class DataAccess:IDataAccess
         {
             Name = student.Name,
             Programme = student.Programme,
-            GradeInCourses = student.GradeInCourses,
+            
         };
 
-        EntityEntry<Student> newStudent = await context.Student.AddAsync(toCreate);
+        EntityEntry<Student> newStudent = await context.Students.AddAsync(toCreate);
         await context.SaveChangesAsync();
         return newStudent.Entity;
     }

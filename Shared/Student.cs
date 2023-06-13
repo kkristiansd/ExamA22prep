@@ -15,6 +15,14 @@ public class Student
     
     public List<GradeInCourse> GradeInCourses { get; set; }
 
-   
-    
+    public Student(string Name, string Programme)
+    {
+        this.Name = Name;
+        this.Programme = Programme;
+    }
+
+    public Student()
+    {
+        
+    }
 }

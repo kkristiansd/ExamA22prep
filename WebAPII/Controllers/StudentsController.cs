@@ -6,11 +6,11 @@ namespace WebAPII.Controllers;
 [ApiController]
 [Route("[controller]")]
 
-public class StudentController:ControllerBase
+public class StudentsController:ControllerBase
 {
     private readonly IDataAccess dataLogic;
 
-    public StudentController(IDataAccess dataLogic)
+    public StudentsController(IDataAccess dataLogic)
     {
         this.dataLogic = dataLogic;
     }

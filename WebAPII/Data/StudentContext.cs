@@ -5,7 +5,7 @@ namespace WebAPII.Data;
 
 public class StudentContext:DbContext
 {
-    public DbSet<Student> Student { get; init; }
+    public DbSet<Student> Students { get; set; }
     public DbSet<GradeInCourse> Grade { get; set; } 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
