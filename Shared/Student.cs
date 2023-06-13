@@ -13,7 +13,7 @@ public class Student
     public string Programme { get; set; }
     
     
-    public List<GradeInCourse> GradeInCourses { get; set; }
+    
 
     public Student(string Name, string Programme)
     {
